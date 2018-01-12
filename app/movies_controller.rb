@@ -82,7 +82,7 @@ def can_update_multiple_items_at_once
     Movie.create(title: "Movie_#{i}", release_date: 2000+i)
   end
   5.times do |i|
-    Movie.find(title:"")
+    Movie.find(title:"Movie_#{i}")
   end
   binding.pry
 
