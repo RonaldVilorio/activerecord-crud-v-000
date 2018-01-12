@@ -83,7 +83,7 @@ def can_update_multiple_items_at_once
   end
 
   5.times do |i|
-    Movie.find("#{i}").update(title: "A Movie")
+    Movie.find("#{i+1}").update(title: "A Movie")
   end
   # binding.pry
 
